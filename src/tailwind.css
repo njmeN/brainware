@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@300;400;600;700&family=Source+Code+Pro:wght@700&family=Space+Grotesk&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .nav-items{
+        @apply text-neutral-400 text-center text-xs/5 uppercase py-8 px-12 font-semibold tracking-wide font-sourceCodePro hover:text-white hover:cursor-pointer;
+    }
+}
+@layer components{
+      .button-style{
+          @apply font-sourceCodePro font-bold text-xs/5 uppercase text-center tracking-wide;
+      }
+}
+@layer utilities{
+    .border-grad{
+        position:relative;
+        border-top-width:2.222px;
+        border-bottom-width:2.222px;
+        border-style:solid;
+        border-image: conic-gradient(from 180deg at 50% 50%, #D77DEE -43.01deg, #FACB7C 46.82deg, #89F9E8 129.02deg, #9299FC 226.76deg, #D77DEE 316.99deg, #FACB7C 406.82deg) 1;
+    }
+    .border-gradient{
+        position:relative;
+        border-top-width:2.222px;
+        border-bottom-width:2.222px;
+        border-style:solid;
+        border-image: conic-gradient(from 180deg at 50% 50%, #D77DEE -43.01deg, #FACB7C 46.82deg, #89F9E8 129.02deg, #9299FC 226.76deg, #D77DEE 316.99deg, #FACB7C 406.82deg) 1;
+    }
+    .border-gradient::after{
+        @apply absolute -top-[1.778px] content-[url('./img/right.svg')];
+    }
+    .border-gradient::before{
+        @apply absolute -top-[1.778px] -left-[40.5%] content-[url('./img/left.svg')];
+    }
+    
+    .bor-gradient{
+        -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+        border-radius:10px;
+        background-image: conic-gradient(from 180deg at 50% 50%, #D77DEE -43.01deg, #FACB7C 46.82deg, #89F9E8 129.02deg, #9299FC 226.76deg, #D77DEE 316.99deg, #FACB7C 406.82deg);
+    }
+    
+    
+}
