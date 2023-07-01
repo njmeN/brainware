@@ -15,13 +15,6 @@
       }
 }
 @layer utilities{
-    .border-grad{
-        position:relative;
-        border-top-width:2.222px;
-        border-bottom-width:2.222px;
-        border-style:solid;
-        border-image: conic-gradient(from 180deg at 50% 50%, #D77DEE -43.01deg, #FACB7C 46.82deg, #89F9E8 129.02deg, #9299FC 226.76deg, #D77DEE 316.99deg, #FACB7C 406.82deg) 1;
-    }
     .border-gradient{
         position:relative;
         border-top-width:2.222px;
@@ -42,6 +35,8 @@
         border-radius:10px;
         background-image: conic-gradient(from 180deg at 50% 50%, #D77DEE -43.01deg, #FACB7C 46.82deg, #89F9E8 129.02deg, #9299FC 226.76deg, #D77DEE 316.99deg, #FACB7C 406.82deg);
     }
-    
+    .div-gray-background{
+    @apply absolute  hidden rounded-2xl xl:flex items-center gap-6 p-4 bg-lightGray;
+    }
     
 }
