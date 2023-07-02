@@ -6,8 +6,14 @@
 
 @layer base{
     .nav-items{
-        @apply text-neutral-400 text-center text-xs/5 uppercase py-8 px-12 font-semibold tracking-wide font-sourceCodePro hover:text-white hover:cursor-pointer;
+        @apply text-neutral-400 text-center text-xs/5 uppercase py-8 px-8 font-semibold tracking-wide font-sourceCodePro bor-gradient hover:cursor-pointer;
     }
+    .div-gray-background{
+        @apply absolute  hidden rounded-2xl xl:flex items-center gap-6 p-4 bg-lightGray;
+    }
+    .text-heading{
+        @apply ;
+        }
 }
 @layer components{
       .button-style{
@@ -29,14 +35,19 @@
         @apply absolute -top-[1.778px] -left-[40.5%] content-[url('./img/left.svg')];
     }
     
-    .bor-gradient{
-        -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
-        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
-        border-radius:10px;
+    .bor-gradient:hover{
         background-image: conic-gradient(from 180deg at 50% 50%, #D77DEE -43.01deg, #FACB7C 46.82deg, #89F9E8 129.02deg, #9299FC 226.76deg, #D77DEE 316.99deg, #FACB7C 406.82deg);
+        -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
     }
-    .div-gray-background{
-    @apply absolute  hidden rounded-2xl xl:flex items-center gap-6 p-4 bg-lightGray;
+    .card:hover .gradient-overly{
+        z-index:-20;
+    }
+    .card:hover .tranmautritam{
+        display:block;
+    }
+    .card:hover .back-div{
+        display:block;
     }
     
 }
