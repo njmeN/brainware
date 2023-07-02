@@ -10,6 +10,7 @@ module.exports = {
         '45px':'-8%',
       },
       colors:{
+           gray2: '#ADA8C3',
            lightGray:'rgba(71, 64, 96, 0.37)',
            gray:'#CAC6DD',
            darkGray:'#6C7275',
