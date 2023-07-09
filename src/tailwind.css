@@ -12,8 +12,14 @@
         @apply absolute  hidden rounded-2xl xl:flex items-center gap-6 p-4 bg-lightGray;
     }
     .text-heading{
-        @apply ;
+        @apply text-white font-sora text-5xl/[3.75rem] font-normal ;
         }
+    .text-medium{
+        @apply font-sora font-normal text-xl/[2.25rem] text-white;
+    }
+    .desc-style{
+        @apply font-sora font-light text-base text-gray2;
+    }    
 }
 @layer components{
       .button-style{
@@ -38,7 +44,10 @@
         @apply absolute -top-[1.778px] content-[url('./img/right.svg')];
     }
     .border-gradient::before{
-        @apply absolute -top-[1.778px] -left-[40.5%] content-[url('./img/left.svg')];
+        @apply absolute -top-[1.778px] content-[url('./img/left.svg')];
+    }
+    .card-border-gradient{     
+        background-image: conic-gradient(from 180deg at 50% 50%, #D77DEE -43.01deg, #FACB7C 46.82deg, #89F9E8 129.02deg, #9299FC 226.76deg, #D77DEE 316.99deg, #FACB7C 406.82deg);
     }
     
     .card:hover .gradient-overly{

@@ -8,11 +8,13 @@ module.exports = {
         '6%':"6%",
         '25px':'-5%',
         '45px':'-8%',
+        '10%':'-10%',
       },
       colors:{
            gray2: '#ADA8C3',
            lightGray:'rgba(71, 64, 96, 0.37)',
            gray:'#CAC6DD',
+           lightgray2:'rgba(117, 113, 133, 0.50)',
            darkGray:'#6C7275',
            lightBlack:'rgba(14, 12, 23, 0.85)',
       },

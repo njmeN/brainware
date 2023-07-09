@@ -14,12 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body class="bg-black box-border m-0 p-0">
+<body class="bg-black box-border m-0 p-0 overflow-x-hidden">
         <!--nav bar-->
-        <nav class="sticky flex items-center justify-between mx-5 md:mx-10 py-4 lg:py-0 ">
+        <nav class="flex items-center justify-between mx-5 md:mx-10 py-4 lg:py-0 ">
             <!--nav right-->
             <div><img class="h-10 w-56" src="img/logo (1).png"/></div>
-            <!--اینجا-->
             <div class="hidden lg:flex lg:items-center "><!--nav-items  ->custom-->
                 <a class="nav-items">FEATURES</a>
                 <a class="nav-items">PRICING</a>
@@ -29,7 +28,7 @@
             <!--nav left-->
             <div class="flex items-center gap-10">
                 <a class=" hidden md:flex xl:nav-items">NEW ACCOUNT</a>
-                <button class="h-[44px] text-white border-gradient button-style mx-5 md:mx-10 ">
+                <button class="h-[44px] text-white border-gradient button-style mx-5 md:mx-10 before:-left-[40.5%]  ">
                     Sign in
                   </button>
             </div>
@@ -95,15 +94,65 @@
         
         <!--chat-->
         <section id="chat">
-            <p class="text-white font-sora text-5xl/[3.75rem] font-normal mt-40 xl:mt-[30rem] mx-4 md:mx-auto md:text-center md:w-1/2">Chat Smarter, Not Harder with Brainwave</p>
-            <div class="">
-                <div class="card relative w-[24rem] h-[23rem] mt-20 mx-auto sm:ml-9 md:ml-52 xl:ml-80 transition-all ease-in-out duration-500">
+            <p class="text-heading mt-40 xl:mt-[30rem] mx-4 text-left lg:text-center lg:mx-auto md:w-1/2">Chat Smarter, Not Harder with Brainwave</p>
+            <div class="flex gap-10 w-[100rem] mt-20 sm:ml-9 md:ml-52 xl:ml-80">
+                <!--card-->
+                <div class="card relative w-[24rem] h-[23rem] transition-all ease-in-out duration-500">
                     <img class="" src="./img/base06.svg"/>
                     <div class="hidden back-div absolute w-[22.5rem] h-40 bg-purple-600 top-2 right-0 left-0 mx-auto rounded-xl -z-10"></div>
                     <img class="hidden tranmautritam absolute bottom-1.5 right-2 h-[20rem]  backdrop-grayscale saturate-150 transition-all ease-in-out duration-500 overflow-hidden" src="./img/tranmautritam.png"/>
                     <img class="gradient-overly absolute w-13 h-13 top-0 right-45px" src="./img/gradient.svg"/>
-                    <p class="absolute font-sora font-normal text-xl/[2.25rem] text-white top-10 left-10">Ask anything</p>
-                    <p class="absolute text-justify font-sora font-light text-base text-gray2 top-24 left-10 right-10">Lets users quickly find answers to their questions without having to search through multiple sources.</p>
+                    <p class="absolute text-medium top-10 left-10">Ask anything</p>
+                    <p class="absolute text-justify desc-style top-24 left-10 right-10">Lets users quickly find answers to their questions without having to search through multiple sources.</p>
+                    <div class="absolute flex items-center justify-between w-full h-12 p-10 bottom-5">
+                        <img class="w-12 h-12 rounded-xl" src="./img/01.svg"/>
+                        <div class="flex items-center">
+                            <p class="font-sourceCodePro text-xs font-bold uppercase text-white">explore more</p>
+                            <img src="./img/chevron-right.svg"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card-->
+                <div class="card relative w-[24rem] h-[23rem] transition-all ease-in-out duration-500">
+                    <img class="" src="./img/base02.svg"/>
+                    <div class="hidden back-div absolute w-[22.5rem] h-40 bg-yellow-600 top-2 right-0 left-0 mx-auto rounded-xl -z-10"></div>
+                    <img class="hidden tranmautritam absolute bottom-1.5 right-2 h-[20rem]  backdrop-grayscale saturate-150 transition-all ease-in-out duration-500 overflow-hidden" src="./img/tranmautritam.png"/>
+                    <p class="absolute text-medium top-10 left-10">Ask anything</p>
+                    <p class="absolute text-justify desc-style top-24 left-10 right-10">Lets users quickly find answers to their questions without having to search through multiple sources.</p>
+                    <div class="absolute flex items-center justify-between w-full h-12 p-10 bottom-5">
+                        <img class="w-12 h-12 rounded-xl" src="./img/08.svg"/>
+                        <div class="flex items-center">
+                            <p class="font-sourceCodePro text-xs font-bold uppercase text-white">explore more</p>
+                            <img src="./img/chevron-right.svg"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card-->
+                <div class="card relative w-[24rem] h-[23rem] transition-all ease-in-out duration-500">
+                    <img class="" src="./img/base01.svg"/>
+                    <div class="hidden back-div absolute w-[22.5rem] h-40 bg-blue-600 top-2 right-0 left-0 mx-auto rounded-xl -z-10"></div>
+                    <img class="hidden tranmautritam absolute bottom-1.5 right-2 h-[20rem]  backdrop-grayscale saturate-150 transition-all ease-in-out duration-500 overflow-hidden" src="./img/tranmautritam.png"/>
+                    <p class="absolute text-medium top-10 left-10">Ask anything</p>
+                    <p class="absolute text-justify desc-style top-24 left-10 right-10">Lets users quickly find answers to their questions without having to search through multiple sources.</p>
+                    <div class="absolute flex items-center justify-between w-full h-12 p-10 bottom-5">
+                        <img class="w-12 h-12 rounded-xl" src="./img/05.svg"/>
+                        <div class="flex items-center">
+                            <p class="font-sourceCodePro text-xs font-bold uppercase text-white">explore more</p>
+                            <img src="./img/chevron-right.svg"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!--card-->
+                <div class="card relative w-[24rem] h-[23rem] transition-all ease-in-out duration-500">
+                    <img class="" src="./img/base06.svg"/>
+                    <div class="hidden back-div absolute w-[22.5rem] h-40 bg-purple-600 top-2 right-0 left-0 mx-auto rounded-xl -z-10"></div>
+                    <img class="hidden tranmautritam absolute bottom-1.5 right-2 h-[20rem]  backdrop-grayscale saturate-150 transition-all ease-in-out duration-500 overflow-hidden" src="./img/tranmautritam.png"/>
+                    <img class="gradient-overly absolute w-13 h-13 top-0 right-45px" src="./img/gradient.svg"/>
+                    <p class="absolute text-medium top-10 left-10">Ask anything</p>
+                    <p class="absolute text-justify desc-style top-24 left-10 right-10">Lets users quickly find answers to their questions without having to search through multiple sources.</p>
                     <div class="absolute flex items-center justify-between w-full h-12 p-10 bottom-5">
                         <img class="w-12 h-12 rounded-xl" src="./img/01.svg"/>
                         <div class="flex items-center">
@@ -113,9 +162,256 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div class="flex gap-4 mt-20 justify-center items-center">
+                <img src="./img/Ellipse 23.svg"/>
+                <img class="border-white border-2 rounded-full p-2" src="./img/Ellipse 23.svg"/>
+                <img src="./img/Ellipse 23.svg"/>
+                <img src="./img/Ellipse 23.svg"/>
+            </div>
         </section>
+        <div class="lg:w-[100rem] lg:mx-auto">
+        <!--AI power section-->
+            <section id="Ai-power" class=" mt-40">
+                    <div class="flex flex-col lg:flex-row justify-center gap-20 lg:gap-40 items-center mx-4 lg:mx-auto">
+                        <!--left-->
+                        <div class="flex flex-col justify-between lg:h-[34.5rem] w-full lg:w-auto mx-4">
+                            <div><p class="text-heading md:w-4/5 lg:w-3/4">Unlock the  power of AI</p>
+                            <p class="desc-style mt-6 lg:w-2/3">Brainwave unlocks the potential of AI-
+                                powered applications</p>
+                            <button class="button-style h-[44px] text-white mt-10 border-gradient before:-left-[18%] ml-5">see how it work</button>
+                            </div>
+                            
+                            <div class="flex items-center gap-2 mt-8 lg:mt-0">
+                                <img class="border-2 border-solid border-lightgray2 rounded-full" src="./img/arrow-left.svg"/>
+                                <img class="border-2 border-solid border-lightgray2 rounded-full rotate-180 " src="./img/arrow-left.svg"/>
+                            </div>
+                        </div>
+                        <!--right-->
+                        <div>
+                            <div class="relative w-[21.4rem] h-[27.5rem] md:w-[27.5rem] md:h-[34.5rem] border-2 border-darkGray rounded-3xl">
+                                    <img class="absolute top-8 right-8" src="./img/music.svg"/>
+                                    <img class="absolute top-32 right-28" src="./img/gradient abstract.svg"/>
+                                    
+                                    <div class="bottom-9 right-8 div-gray-background">
+                                        <div><img src="./img/delivery.png"/></div>
+                                        <div>
+                                            <p class="text-white text-base font-semibold font-Inter mb-1">code generation</p>
+                                            <div class="flex items-center">
+                                                <img class="-mr-2 h-6 w-6" src="./img/avatar1.png"/>
+                                                <img class="-mr-2 h-6 w-6" src="./img/avatar2.png"/>
+                                                <img class="h-6 w-6" src="./img/avatar3.png"/>
+                                            </div>
+                                        </div>
+                                        <div class="text-base/[1.25rem] font-Inter font-medium text-darkGray pt-6">1m ago</div>
+                                    </div>
+                            </div>    
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            
+            <!--connect AI-->
+            <section id="connect-AI" class="mt-40 w-full">
+                <div class="flex flex-col lg:flex-row justify-center gap-36 items-center">
+                    <!--left-->
+                    <div class="w-[21.4rem] h-[21.4rem] md:w-[27.5rem] md:h-[27.5rem] bg-lightBlack rounded-3xl border-2 border-darkGray lg:ml-28"><img src="./img/05-Speed (Transparent) 1.png"/></div>
+                    <!--right-->
+                    <div class="lg:w-2/5">
+                        <p class="text-heading mx-4 w-4/5">Connect with AI chat bot</p>
+                        <p class="desc-style mt-6 mx-4 sm:w-11/12 ">Connect with the AI chatbot to start the conversation.
+                            The chatbot uses natural language processing to 
+                            understand your queries and provide relevant responses</p>
+                        <button class="button-style h-[44px] text-white mt-10 border-gradient before:-left-[18%] ml-5">connect now</button>                 
+                    </div>
+                    
+                </div>
+            </section>
+           
+            <section>
+                <div class="flex lg:justify-center gap-10 mt-20 ml-4 ">
+                        <div class="border-t-2 border-darkGray  min-w-[19rem] ">
+                            <p class="mt-10 text-xs/[1.25rem] font-semibold font-sourceCodePro uppercase text-darkGray">01.</p>
+                            <p class="text-medium ">Sign up</p>
+                        </div>
+                        <div class="border-t-2 border-darkGray  min-w-[19rem]">
+                            <p class="mt-10 text-xs/[1.25rem] font-semibold font-sourceCodePro uppercase text-darkGray">02.</p>
+                            <p class="text-medium">Connect with AI Chatbot</p>
+                        </div>
+                    
+                    
+                        <div class="border-t-2 border-darkGray  min-w-[19rem]">
+                            <p class="mt-10 text-xs/[1.25rem] font-semibold font-sourceCodePro uppercase text-darkGray">03.</p>
+                            <p class="text-medium ">Get Personlize recommendations</p>
+                        </div>
+                    
+                    
+                        <div class="border-t-2 border-darkGray min-w-[19rem]">
+                            <p class="mt-10 text-xs/[1.25rem] font-semibold font-sourceCodePro uppercase text-darkGray">04.</p>
+                            <p class="text-medium">Explore and Engage</p>
+                        </div>
+                </div>
+            </section>
+            
+            <section id="generative-ai">
+                <p class="text-heading mt-40 text-left lg:text-center mx-4 lg:mx-auto w-4/5">Generative AI made for creators</p>
+                <p class="desc-style mt-4  text-left lg:text-center mx-4 lg:mx-auto">Brainwave unlocks the potential of AI-powered applications</p>
+                <div class="mt-20 border-2 border-darkGray rounded-2xl flex justify-center gap-24 mx-4 xl:mx-auto lg:w-[70rem] xl:w-[80rem] relative overflow-hidden">
+                    <img src="./img/tranmautritam_a.png" class="hidden xl:block"/>
+                    <img src="./img/tranmautritam_a.png" class="min-w-[50rem] min-h-[65rem] xl:hidden absolute bottom-0 right-o md:right-32 "/>
+                    <div class="z-10 lg:text-left w-[17.3rem]">
+                        <p class="ftext-medium mt-28 xl:mt-[12.5rem]">Smartest AI</p>
+                        <p class="desc-style mt-4">Brainwave unlocks the potential of AI-powered applications</p>
+                        <ul class="mt-14 mx-4 mb-60 list-none">
+                            <li class="desc-style flex gap-8 py-4"><img src="./img/Check.svg"/> Photo generating</li>
+                            <li class="desc-style flex gap-8 py-4"><img src="./img/Check.svg"/>Photo enhance</li>
+                            <li class="desc-style flex gap-8 py-4"><img src="./img/Check.svg"/>Seamless Integration</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="absolute flex py-2 px-5 rounded-3xl gap-2 bg-lightBlack border-2 border-darkGray bottom-6% right-0 left-0 mx-auto w-60 md:w-[30rem]">
+                        <img src="./img/Ellipse.svg"/>
+                        <p class="text-base/[2rem] font-light font-inter text-white">AI is generating|</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!--paying-->
+            <section id="pay">
+                <img class="mx-auto mt-40" src="./img/spherical.svg"/>
+                <p class="text-heading mx-4 lg:text-center mt-32">Pay once, use forever</p>
+                <div class="flex gap-6 mt-20 justify-center">
+                <!--left-->
+                <div class="hidden md:block border-2 border-darkGray rounded-2xl p-8 ">
+                    <div class=" w-[23.54rem]">
+                        <p class="text-white font-sora text-3xl/[3rem] font-normal">Basic</p>
+                        <p class="text-darkGray font-sora text-base/[1.5rem] font-light mt-4 w-2/3 mb-6">AI chatbot, personalized recommendations</p>
+                        <div class="flex items-center">
+                            <span class="text-white font-sora font-normal text-4xl/[3.75rem]">$</span>
+                            <span class="text-white font-sora text-8xl font-semibold">0</span>
+                        </div>
+                        <button class="relative button-style text-black bg-white mb-6 py-3 ml-4 px-32 before:content-[url('./img/Left-white.svg')] before:absolute before:-left-5 before:top-0  after:content-[url('./img/Right-white.svg')] after:absolute  after:top-0 after:-right-5 mt-11">get started</button>
+                        <ul class=" list-none">
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>An AI chatbot that can understand your queries</li>
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>Personalized recommendations based on your preferences</li>
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>Ability to explore the app and its features without any cost</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--center-->
+                <div class="border-2 border-darkGray rounded-2xl p-8 mx-5">
+                    <div class="w-[17rem] md:w-[24rem] mx-auto ">
+                        <p class="text-white font-sora text-3xl/[3rem] font-normal">Premium</p>
+                        <p class="text-darkGray font-sora text-base/[1.5rem] font-light mt-4 w-2/3 mb-6">Advanced AI chatbot, priority support, analytics dashboard</p>
+                        <div class="flex items-center">
+                            <span class="text-white font-sora font-normal text-4xl/[3.75rem]">$</span>
+                            <span class="text-white font-sora text-8xl font-semibold">99.9</span>
+                        </div>
+                        <button class="hidden md:block relative button-style text-black bg-white mb-6 py-3 ml-4 px-32 before:content-[url('./img/Left-white.svg')] before:absolute before:-left-5 before:top-0  after:content-[url('./img/Right-white.svg')] after:absolute  after:top-0 after:-right-5 mt-11">get started</button>
+                        <button class="md:hidden relative button-style text-black bg-white mb-6 py-3 ml-4  px-20 before:content-[url('./img/Left-white.svg')] before:absolute before:-left-5 before:top-0  after:content-[url('./img/Right-white.svg')] after:absolute  after:top-0 after:-right-5 mt-11">get started</button>
+                        <ul class=" list-none">
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>An advanced AI chatbot that can understand complex queries</li>
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>An analytics dashboard to track your conversations</li>
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>Priority support to solve issues quickly</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--right-->
+                <div class="hidden md:block border-2 border-darkGray rounded-2xl p-8 ">
+                    <div class="w-[23.54rem]">
+                        <p class="text-white font-sora text-3xl/[3rem] font-normal">Enterprise</p>
+                        <p class="text-darkGray font-sora text-base/[1.5rem] font-light mt-4 w-2/3 mb-6">Custom AI chatbot, advanced analytics, dedicated account</p>
+                        
+                        <button class="h-[44px] text-white border-gradient button-style ml-4 px-32 before:left-25px after:right-25px mb-6 mt-36">contact us</button>
+                        <ul class=" list-none">
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>An AI chatbot that can understand your queries</li>
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>Personalized recommendations based on your preferences</li>
+                            <li class="desc-style flex gap-8 py-4 "><img src="./img/Check.svg"/>Ability to explore the app and its features without any cost</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!--feature section-->
+            <section id="feature">
+                <p class="text-heading lg:text-center text-left ml-4 mt-40">What we’re working on</p>
+                <div class="flex flex-col md:flex-row gap-6 mt-20 justify-center items-center">
+                    <div class="relative w-[20.9rem] h-[33.1rem] lg:w-[39.3rem] lg:h-[49.1rem] border-2 border-darkGray rounded-[2.5rem]">
+                        <div> 
+                            <div class="absolute top-8 right-8 lg:top-14 lg:right-32 inline-flex items-center py-1 px-4 rounded-md justify-between gap-2 bg-white">
+                                <img src="./img/check2.svg"/>
+                                <span class="text-xs font-spaceGrotesk font-normal uppercase text-black">done</span>
+                            </div>
+                            <img class="absolute right-0 left-0 top-20 mx-auto lg:mx-0 lg:top-40 lg:left-[3.69rem]" src="./img/Vector 14.svg"/>
+                                <p class="absolute top-[6rem] left-14 lg:top-[10.5rem] lg:left-[6.81rem] font-sourceCodePro font-normal text-base text-white">Morning! Ask me anything</p>
+                                <p class="absolute top-[7.5rem] right-10 lg:top-[12.5rem] text-gray2 lg:left-[18.62rem] text-sm font-spaceGrotesk">1m ago</p>
+                            <img class="absolute left-14 top-[8rem] lg:top-52 lg:left-[6.81rem]" src="./img/logo2.svg"/>
+                            <img class="absolute top-56 lg:top-72 left-0 right-0 mx-auto" src="./img/voice.svg"/>
+                            <img class="absolute top-[14rem] lg:top-[19rem] right-10 lg:right-24" src="./img/avatar1.png"/>
+                        </div>
+                        <div class="absolute bottom-8 left-8 lg:bottom-14 lg:left-16">
+                            <p class="text-white font-sora text-3xl/[3rem] font-normal">voice recognition</p>
+                            <p class="mr-6 lg:mr-12 desc-style">Enable the chatbot to understand and respond to voice commands,
+                                making it easier for users to interact with the app hands-free.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="relative w-[20.9rem] h-[33.1rem] lg:w-[39.3rem] lg:h-[49.1rem] border-2 border-darkGray rounded-[2.5rem] md:mt-28">
+                        <div> 
+                            <div class="absolute top-8 right-8 lg:top-14 lg:right-32 inline-flex items-center py-1 px-4 rounded-md justify-between gap-2 bg-white">
+                                <img src="./img/loading-01.svg"/>
+                                <span class="text-xs font-spaceGrotesk font-normal uppercase text-black">in progress</span>
+                            </div>
+                            <img class="absolute top-14 left-0 right-0 mx-auto lg:mx-0 lg:top-28 lg:left-14" src="./img/props.svg"/>
+                            <img class="absolute top-[6.25rem] left-[4rem] lg:top-[10.75rem] lg:left-[12rem] -z-10" src="./img/monitor.svg"/>
+                        </div>
+                        <div class="absolute bottom-8 left-8 lg:bottom-14 lg:left-16">
+                            <p class="text-white font-sora text-3xl/[3rem] font-normal">Gamification</p>
+                            <p class="mr-6 lg:mr-12 desc-style">Add game-like elements, such as badges or leaderboards, 
+                                to incentivize users to engage with the chatbot more frequently.</p>
+                        </div>
+                        
+                    </div>
+                </div>    
+            </section>
+            
+            <section class="mt-[15rem]">
+            <div class="relative h-[39.4rem]">
+                <img class="absolute w-[56.56rem] h-[56.56rem] blur-[128px] left-0 right-0 m-auto opacity-50" src="./img/01.png"/>
+                    <img class="absolute left-0 right-0 m-auto h-[46.5rem] w-[46.5rem] object-cover" src="./img/Pattern 2.svg"/>
+                <div class="text-center mx-auto absolute top-60 left-0 right-0">
+                <!--text content-->
+                <div class="relative text-4xl/[3.25rem] sm:text-5xl/[3.75rem] lg:text-6xl/[4.5rem] font-semibold font-sora text-white ">Be part of the future of <br>
+                    <div class="inline-block relative"><img class="absolute right-0 bottom-[-0.5rem]" src="./img/underline.svg"/>BrainWave</div>
+                </div>
+                <div class="relative text-gray mx-auto font-sora text-xl md:w-5/12 mt-4">Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.</div>
+                <button class="relative button-style text-black bg-white py-3 px-2 before:content-[url('./img/Left-white.svg')] before:absolute before:-left-5 before:top-0  after:content-[url('./img/Right-white.svg')] after:absolute  after:top-0 after:-right-5 mt-8">
+                    Get started
+                </button>
+                </div>
+            </div>
+            </section> 
+        </div>
+            <footer class="mt-40">
+                <div class=" flex items-center justify-center md:justify-between mx-5 md:mx-10 py-4 border-b-[1px] border-lightBlack ">
+                
+                    <div><img class="h-10 w-56" src="img/logo (1).png"/></div>
+                    
+                    <div class="hidden md:flex md:items-center "><!--nav-items  ->custom-->
+                        <a class="nav-items">FEATURES</a>
+                        <a class="nav-items">PRICING</a>
+                        <a class="nav-items">HOW TO USE</a>
+                        <a class="nav-items">ROADMAP</a>
+                    </div>    
+                </div>
+                <div class=" flex items-center justify-center md:justify-between mx-5 md:mx-10 py-4 ">
+                
+                    <p class="hidden md:block font-sora text-sm text-darkGray font-normal">© 2023 UI8</p>
+                    
+                    <div class=""><img src="./img/socials.svg"/></div>    
+            </footer>
+
 </body>
 </html>
-</body>
-</html
